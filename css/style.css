@@ -1,0 +1,823 @@
+body{
+  overflow-x: hidden;
+}
+
+/* Promotional banner */
+#banner{
+  position:fixed;
+  overflow: hidden;
+  z-index: 2;
+
+  width:100%;
+  height:100px;
+
+  background-color: rgb(40, 40, 60);
+  box-shadow: 0 3px 3px rgba(20, 20, 70, 0.3);
+}
+
+.bannerContainer{
+  width:100%;
+  height:100px;
+
+  background-image: url(".../images/confetti.png");
+  background-size: auto;
+}
+
+/* MixR Logo in Banner */
+#banner img{
+  position:relative;
+  left: 30%;
+  top: 20px;
+
+  width: 150px;
+}
+
+/* Banner text */
+.bannerOffer{
+  position:relative;
+  top:-20px;
+
+  text-align: center;
+  font-family: "Lato-Bold", sans-serif;
+  color:white;
+  font-size: 1.5rem;
+}
+
+#Offer{
+  font-family: "Lato-Regular", sans-serif;
+  text-decoration: underline;
+}
+
+/* Banner "Contact us" button */
+#banner button{
+  position: absolute;
+  left:89%;
+  top:30px;
+  color: white;
+  padding: 10px 35px;
+  background-image: linear-gradient(0, #4CE5BC 0%, #12B79D 100% );
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(20, 20, 70, 0.3);
+}
+
+#banner button:hover{
+  background-image: none;
+  background-color: white;
+  color:#12B79D;
+  box-shadow: 0 0 8px rgba(20, 20, 70, 0.3);
+}
+
+/* First section */
+#title{
+  position: relative;
+  top:80px;
+  margin-bottom: 10%;
+  padding: 100px 0;
+  background-image: linear-gradient(0, #4CE5BC 0%, #12B79D 100% );
+}
+
+/* MixR Logo - underlined */
+.titleLogo{
+  position:relative;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.titleLogo img{
+  width: 120px;
+}
+
+.titleLogo hr{
+  width: 40vw;
+  border-width: 2px;
+  border-radius: 50%;
+  border-color: rgba(255,255,255, 0.5);
+}
+
+/* h1 text */
+.mainText{
+  position: relative;
+  top: 2vw;
+  width: 100%;
+  height:auto;
+  text-align: center;
+}
+
+.mainText h1{
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 2.4vw;
+  color: #fff;
+}
+
+/* Action items in mainText */
+.titleHighlight{
+  font-family:"Lato-Bold";
+}
+
+/* title Contact us button */
+.titleCTA{
+  position: relative;
+  margin-top: 15%;
+  text-align: center;
+}
+
+.titleCTA button{
+  padding: 1% 8%;
+  transition: 1s;
+  transition: all 1s cubic-bezier(.25,.8,.25,1);
+}
+
+.titleCTA button:hover{
+  background-color: white;
+  color:#12B79D;
+  box-shadow: 0 0 8px rgba(20, 20, 70, 0.3);
+}
+
+/* Image on the right of title section + background */
+.titleImageContainer{
+  position: relative;
+  margin:-100px 0;
+
+  width:100%;
+  height:auto;
+
+  background-image: url('../images/22.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+.titleImageContainer img {
+  margin-top: 50px;
+  width:100%;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Features Section */
+#features{
+  margin-bottom: 35%;
+  padding: 100px 10% 0 10%;
+
+
+
+  line-height: 1.5;
+  font-style: "lato", sans-serif;
+  color: rgb(40,40,40);
+  font-size: 1.3rem;
+}
+
+#features h3{
+  margin-bottom: 35px;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+
+/* Feature 1 -left */
+.featuresContainer1{
+  position:relative;
+  margin-bottom: 40%;
+}
+
+.featuresText1 {
+  position: relative;
+  left: 3%;
+  top: 100px;
+  min-width: 400px;
+}
+
+.featuresContainer1 img{
+  position: relative;
+  float: left;
+  width: 400px;
+}
+
+/* Feature 2 - right*/
+.featuresContainer2{
+  position: relative;
+  margin-bottom: 40%;
+}
+
+.featuresText2 {
+  position: relative;
+  right: 3%;
+  top: 100px;
+  min-width: 400px;
+}
+
+.featuresContainer2 img{
+  position: relative;
+  float: right;
+  width: 400px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Carousel */
+
+#DashboardOverview{
+  background-color: #12B79D;
+  margin-bottom: 10%;
+  height:1200px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+/* .CarouselbackgroundImage{
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+  width:100%;
+  height:1200px;
+}
+
+.CarouselbackgroundImage img{
+  width:100%;
+  height:100%;
+  opacity: 0.7;
+  background-position: center;
+} */
+
+.carousel-indicators{
+  position:relative;
+  top:23%;
+}
+
+.carousel-title{
+  position: relative;
+  top: 20%;
+}
+
+.carousel-inner{
+  padding-bottom: 5%;
+}
+
+.slide{
+  z-index: 1;
+  overflow: visible;
+  width: 100%;
+  height:700px;;
+  margin-left: auto;
+  margin-right: auto;
+
+  line-height: 1.5;
+  font-style: "lato", sans-serif;
+  color: rgb(40,40,40);
+}
+
+.slideText{
+  position: relative;
+  text-align: center;
+  padding-top: 180px;
+}
+
+.slide h3{
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.slide h4{
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.slide p{
+  line-height: 1.5;
+  font-style: "lato", sans-serif;
+  color: rgb(40,40,40);
+  font-size: 1.3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.slideImage img{
+  text-align: center;
+  overflow: visible;
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(20, 20, 70, 0.3);
+}
+
+#carouselImage1 img{
+  width: 700px;
+}
+
+#carouselImage2 img{
+  width: 600px;
+}
+
+#carouselImage3 img{
+  width: 500px;
+}
+
+.slide-icon{
+  position: absolute;
+  top: 100%;
+  background-color: rgb(40,40,40);
+  border-radius: 100%;
+  width: 70px;
+  height:70px;
+  opacity: 0.7;
+  padding:20px;
+}
+
+#previous-icon{
+  left: 10%;
+}
+
+#next-icon{
+  right: 10%;
+}
+
+
+@media screen and (max-width:1300px) {
+
+  .bannerOffer{
+    top:-20px;
+    left:10px;
+  }
+
+  #banner button{
+    left:86%;
+  }
+
+  .titleImageContainer img {
+    margin-bottom: 80px;
+  }
+
+
+}
+
+/* Large Screen - Contain content */
+@media screen and (min-width: 1600px) {
+
+  #features{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+
+}
+
+
+/* Title image switches from rightside view to underneath mainText */
+@media screen and (max-width: 1100px) {
+
+  #banner{
+    height:120px;
+  }
+
+  #banner img{
+    top: 25px;
+    left: 10%;
+    width: 120px;
+  }
+
+  .bannerOffer{
+    top:35px;
+    left:0;
+    text-align: center;
+  }
+
+  #banner button{
+    top: 25px;
+    left:85%;
+  }
+
+  .titleLogo{
+    margin-left: 0;
+  }
+
+  .titleLogo hr{
+    margin-left: -20%;
+    width: 70vw;
+  }
+
+/* Insures that Title background covers full width */
+  .row{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mainText{
+    z-index: 1;
+    left:0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .mainText h1{
+    font-size: 2.5rem;
+  }
+
+  #title{
+    overflow-y: hidden;
+  }
+
+/* Title Imgae becomes maintext background */
+  .titleImageContainer{
+    position:absolute;
+    z-index: 0;
+
+    background-image: none;
+    background-color: rgba(255, 0, 0, 0);
+    opacity: 0.15;
+  }
+
+  .titleImageContainer img {
+    margin-top:0;
+    margin-left: -160px;
+
+    width:300%;
+  }
+
+  .titleCTA{
+    margin-top: 30%;
+    margin-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #features{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .featuresContainer1{
+    left: 0;
+  }
+
+  .featuresText1{
+    top: 80px;
+  }
+
+  .featuresText1 h3{
+  padding-right: 0;
+  }
+
+  .featuresContainer2{
+    left:0;
+    padding-left: 0;
+  }
+
+  .featuresText2{
+    top:50px;
+  }
+
+
+}
+
+
+@media screen and (max-width:1000px){
+
+  #banner button{
+    left: 82%;
+  }
+
+  .bannerOffer{
+    top:35px;
+    font-size: 1.3rem;
+  }
+
+  .titleLogo{
+  margin-left: 0;
+  }
+
+  .titleCTA{
+    margin-left: 0;
+  }
+
+#features{
+  padding-left: 2%;
+  padding-right: 0;
+
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.featuresContainer1{
+  left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-bottom: 30%;
+}
+
+.featuresText1 {
+  width: auto;
+}
+
+.featuresText1 h3{
+  font-size: 2.4rem;
+}
+
+.featuresContainer2{
+  left: 0;
+  margin-right: 2%;
+  margin-bottom: 30%;
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.featuresText2 {
+  width:auto;
+  padding-left: 3%;
+}
+
+.featuresText2 h3{
+  font-size: 2.4rem;
+}
+
+
+.slide-icon{
+  top: 55%;
+  width: 50px;
+  height: 50px;
+  background-color: #12B79D;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#previous-icon{
+  left: 25%;
+}
+
+#next-icon{
+  right: 25%;
+}
+
+#DashboardOverview{
+  height: 1300px;
+}
+}
+
+
+/* Feature 2 image (Right Side) becomes left aligned */
+@media (max-width:812px){
+
+  #banner button{
+    left: 77%;
+  }
+
+  #features{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .featuresContainer1{
+    padding-left: 0;
+  }
+
+  .featuresContainer1 img{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .featuresText1{
+    overflow: hidden;
+    width:auto;
+  }
+
+  .featuresText1 p{
+    padding-right: 0;
+  }
+
+  .featuresText1 h3{
+    top: 40px;
+    font-size: 2.6rem;
+  }
+
+  .featuresContainer2{
+    padding-left: 0;
+  }
+
+  .featuresContainer2 img{
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .featuresText2{
+    overflow: visible;
+    width: auto;
+  }
+
+  .featuresText2 p{
+    padding-right: 0;
+  }
+
+  .featuresText2 h3{
+    top: 40px;
+    font-size: 2.6rem;
+  }
+
+  .slide-icon{
+    top: 60%;
+  }
+
+  #previous-icon{
+    left: 10%;
+  }
+
+  #next-icon{
+    right: 10%;
+  }
+
+}
+
+/* Tablet view */
+@media (max-width:767px){
+
+  #banner img{
+    top: 20px;
+    left: 10%;
+    width: 100px;
+  }
+
+  #banner{
+    height: 150px;
+  }
+
+  #banner button{
+    top: 20px;
+    left: 75%;
+  }
+
+  .bannerOffer{
+    top:35px;
+  }
+
+  #title{
+    overflow: hidden;
+    padding-bottom: 200px;
+  }
+
+  .titleLogo hr{
+    margin-left: auto;
+  }
+
+  .titleImageContainer img {
+    margin-left: -20%;
+    margin-top: 10%;
+    width: 150%;
+  }
+
+  #features{
+    padding: 100px 5%;
+  }
+
+  .featuresText1{
+    min-width: 300px;
+  }
+
+  .featuresText1 p{
+    padding-right: 0;
+  }
+
+  .featuresText1 h3{
+    top: 5px;
+    font-size: 2.4rem;
+  }
+
+  .featuresContainer2 img{
+    float:left;
+  }
+
+  .featuresText2{
+    overflow:hidden;
+    padding-left: 3%;
+    min-width: 500px;
+  }
+
+  .featuresText2 p{
+    padding-right: 0;
+    padding-left: 3%;
+  }
+
+  .featuresText2 h3{
+    top: 5px;
+    font-size: 2.4rem;
+    padding-left: 3%;
+  }
+
+  #DashboardOverview{
+    height: 1500px;
+  }
+
+  .slideText{
+    margin-top: 10%;
+  }
+
+  .slide-icon{
+    top: 70%;
+  }
+
+.carouselIndicators{
+  top: 10px;
+}
+
+}
+
+/* Mobile view */
+@media (max-width:588px){
+
+  #banner button{
+    left: 69%;
+  }
+
+  #title{
+    padding-bottom: 5%;
+  }
+
+  #features{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .featuresContainer1{
+    text-align: center;
+  }
+
+  .featuresContainer1 img{
+    float:none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .featuresText1{
+    left: 0;
+    padding: 0;
+  }
+
+  .featuresText1 h3{
+    padding:0;
+    margin-bottom: 0;
+  }
+
+  .featuresText1 p{
+    padding: 0 5% 0 5%;
+    margin-top: 5%;
+    text-align: justify;
+  }
+
+  .featuresContainer2{
+    text-align: center;
+  }
+
+  .featuresContainer2 img{
+    float:none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .featuresText2{
+    left: 0;
+    padding: 0;
+  }
+
+  .featuresText2 h3{
+    margin-bottom: 0;
+    padding:0;
+  }
+
+  .featuresText2 p{
+    margin-top: 5%;
+    padding: 0 5% 0 5%;
+    text-align: justify;
+  }
+
+  #carouselImage1 img{
+    width: 500px;
+  }
+
+  #carouselImage2 img{
+    width: 500px;
+  }
+
+  #carouselImage3 img{
+    overflow-y: visible;
+    width: 500px;
+  }
+
+  .slide-icon{
+    top: 74%;
+  }
+
+}
