@@ -74,7 +74,9 @@ body{
   top:80px;
   margin-bottom: 10%;
   padding: 100px 0;
-  background-image: linear-gradient(0, #4CE5BC 0%, #12B79D 100% );
+  /* background-image: linear-gradient(0, #4CE5BC 0%, #12B79D 100% ); */
+  background-image: linear-gradient(90deg, #13b79d 0%, #18d3af 25%, #18d3af 75%, #13b79d 100% );
+  background-size: 50%;
 }
 
 /* MixR Logo - underlined */
@@ -172,6 +174,7 @@ body{
   margin-bottom: 35px;
   font-weight: 900;
   font-size: 3rem;
+  padding-right: 1%;
 }
 
 
@@ -219,7 +222,7 @@ body{
 /* Carousel */
 
 #DashboardOverview{
-  background-color: #12B79D;
+  background-image: linear-gradient(90deg, #13b79d 0%, #18d3af 25%, #18d3af 75%, #13b79d 100% );
   margin-bottom: 10%;
   height:1200px;
   text-align: center;
@@ -294,7 +297,6 @@ body{
   padding-right: 10%;
 }
 
-
 .slideImage img{
   text-align: center;
   overflow: visible;
@@ -336,6 +338,17 @@ body{
 }
 
 
+/* Large Screen - Contain content */
+@media screen and (min-width: 1600px) {
+
+  #features{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+}
+
+
 @media screen and (max-width:1300px) {
 
   .bannerOffer{
@@ -350,18 +363,6 @@ body{
   .titleImageContainer img {
     margin-bottom: 80px;
   }
-
-
-}
-
-/* Large Screen - Contain content */
-@media screen and (min-width: 1600px) {
-
-  #features{
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-
 
 }
 
@@ -388,6 +389,10 @@ body{
   #banner button{
     top: 25px;
     left:85%;
+  }
+
+  #title{
+      background-size: 100%;
   }
 
   .titleLogo{
@@ -471,6 +476,9 @@ body{
     top:50px;
   }
 
+  #DashboardOverview{
+    height: 1300px;
+  }
 
 }
 
@@ -555,9 +563,7 @@ body{
   right: 25%;
 }
 
-#DashboardOverview{
-  height: 1300px;
-}
+
 }
 
 
@@ -639,7 +645,7 @@ body{
 }
 
 /* Tablet view */
-@media (max-width:767px){
+@media (max-width:768px){
 
   #banner img{
     top: 20px;
@@ -673,6 +679,10 @@ body{
     margin-left: -20%;
     margin-top: 10%;
     width: 150%;
+  }
+
+  .col-md-6{
+        max-width: 100%;
   }
 
   #features{
@@ -820,4 +830,24 @@ body{
     top: 74%;
   }
 
+}
+
+
+/* mobile */
+@media (max-width:512px){
+  #title{
+    width:512px;
+  }
+
+  #features{
+    width:512px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  #DashboardOverview{
+    width:512px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 }
