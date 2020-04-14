@@ -1,10 +1,19 @@
 body{
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
+  line-height: 1.5;
 }
 
 p{
+  font-size: 1.3rem;
+  font-weight: 400;
   color: rgb(66,66,66);
+}
+
+h1,h2,h3,h4{
+  color: rgb(40,40,40);
+  font-weight: 900;
+  font-size: 3rem;
 }
 
 /* Promotional banner */
@@ -39,9 +48,7 @@ p{
   top:-20px;
 
   text-align: center;
-  font-family: "Lato-Bold", sans-serif;
   color:white;
-  font-size: 1.5rem;
 }
 
 #Offer{
@@ -76,7 +83,7 @@ p{
   top:80px;
   margin-bottom: 10%;
   padding: 100px 0;
-  background-image: linear-gradient(90deg, #13b79d 0%, #18d3af 25%, #18d3af 75%, #13b79d 100% );
+  background-image: linear-gradient(0, rgb(240, 240, 240) 0%, #fff 100% );
   background-size: 50%;
 }
 
@@ -95,7 +102,7 @@ p{
   width: 40vw;
   border-width: 2px;
   border-radius: 50%;
-  border-color: rgba(255,255,255, 0.5);
+  border-color: #12B79D;
 }
 
 /* h1 text */
@@ -108,14 +115,12 @@ p{
 }
 
 .mainText h1{
-  font-family: "Lato-Regular", sans-serif;
   font-size: 2.4vw;
-  color: #fff;
 }
 
 /* Action items in mainText */
 .titleHighlight{
-  font-family:"Lato-Bold";
+  color: #12B79D;
 }
 
 /* title Contact us button */
@@ -129,12 +134,15 @@ p{
   padding: 1% 8%;
   transition: 1s;
   transition: all 1s cubic-bezier(.25,.8,.25,1);
+  background-image: linear-gradient(90deg, #13b79d 0%, #18d3af 25%, #18d3af 75%, #13b79d 100% );
+  color: white;
 }
 
 .titleCTA button:hover{
   background-color: white;
-  color:#12B79D;
+  color:#fff;
   box-shadow: 0 0 8px rgba(20, 20, 70, 0.3);
+  padding: 10px 50px;
 }
 
 /* Image on the right of title section + background */
@@ -155,25 +163,16 @@ p{
   width:100%;
 }
 
-
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
-
 
 
 /* Features Section */
 #features{
-  margin-bottom: 35%;
   padding: 100px 10% 0 10%;
-  line-height: 1.5;
-  font-style: "lato", sans-serif;
-  color: rgb(40,40,40);
-  font-size: 1.3rem;
 }
 
 #features h3{
   margin-bottom: 35px;
-  font-weight: 900;
-  font-size: 3rem;
   padding-right: 1%;
 }
 
@@ -186,7 +185,7 @@ p{
 .featuresText1 {
   position: relative;
   left: 3%;
-  top: 100px;
+  top: 50px;
   min-width: 400px;
 }
 
@@ -205,7 +204,7 @@ p{
 .featuresText2 {
   position: relative;
   right: 3%;
-  top: 100px;
+  top: 50px;
   min-width: 400px;
 }
 
@@ -215,28 +214,61 @@ p{
   width: 400px;
 }
 
+#Feature4{
+  padding-top: 20%;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------- */
 
 
 /* Carousel */
-
 #DashboardOverview{
   background-image: linear-gradient(90deg, #13b79d 0%, #18d3af 25%, #18d3af 75%, #13b79d 100% );
   margin-bottom: 10%;
-  height:1200px;
+  height:1400px;
   text-align: center;
   padding-bottom: 5%;
 }
 
 .carousel-indicators{
   position:relative;
-  top:23%;
+  top:5%;
+  z-index: 0;
 }
 
+.carousel-indicators li{
+  text-indent: 0;
+  height:65px;
+  border-radius: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.carousel-indicators p{
+  position:relative;
+  top:100%;
+  color: white;
+}
+
+/* Text Color in html (White) */
 .carousel-title{
   position: relative;
-  top: 20%;
+  background-color: white;
+  padding: 0 10% 5% 10%;
+}
+
+.Carousel-anchor-icons{
+  position: absolute;
+  margin-left: -30px;
+  width: 65px;
+  text-align: center;
+z-index: 1;
+}
+
+.Carousel-anchor-icons img{
+  width: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .carousel-inner{
@@ -250,21 +282,13 @@ p{
   height:700px;;
   margin-left: auto;
   margin-right: auto;
-
-  line-height: 1.5;
-  font-style: "lato", sans-serif;
-  color: rgb(40,40,40);
 }
 
 .slideText{
   position: relative;
   text-align: center;
-  padding-top: 180px;
-}
-
-.slide h3{
-  font-size: 3rem;
-  font-weight: 900;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .slide h4{
@@ -273,18 +297,14 @@ p{
 }
 
 .slide p{
-  line-height: 1.5;
-  font-style: "lato", sans-serif;
-  color: rgb(40,40,40);
-  font-size: 1.3rem;
   padding-left: 10%;
   padding-right: 10%;
 }
 
 .slideImage img{
+  position:relative;
   text-align: center;
   overflow: visible;
-  position:relative;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 0 10px rgba(20, 20, 70, 0.3);
@@ -302,7 +322,7 @@ p{
   width: 500px;
 }
 
-.slide-icon{
+/* .slide-icon{
   position: absolute;
   top: 100%;
   background-color: rgb(40,40,40);
@@ -310,7 +330,7 @@ p{
   width: 70px;
   height:70px;
   opacity: 0.7;
-  padding:20px;
+  padding: 20px;
 }
 
 #previous-icon{
@@ -319,7 +339,7 @@ p{
 
 #next-icon{
   right: 10%;
-}
+} */
 
 
 /* ------------------------------------------------------------------------------------------------------------------- */
@@ -327,26 +347,15 @@ p{
 
 /* Bottom SpecialOffer - 3 month for free */
 #specialoffer{
-  /* background-color: rgb(40, 40, 60); */
-  /* box-shadow: 0 -3px 3px rgba(20, 20, 70, 0.3); */
   position: relative;
   margin-top: -10%;
   text-align: center;
   padding: 5% 3%;
-  line-height: 1.5;
 }
 
 #specialoffer h2{
-  font-size: 3rem;
-  font-weight: 900;
   color: #13b79d;
 }
-
-#specialoffer p{
-font-size: 1.5rem;
-font-weight: 600;
-}
-
 
 #specialoffer a{
   color: white;
@@ -365,28 +374,13 @@ font-weight: 600;
   box-shadow: 0 0 8px rgba(20, 20, 70, 0.3);
 }
 
-.offerBackground{
-  width:100%;
-  text-align: center;
-}
-
-.offerBackground img{
-  position: absolute;
-  z-index: -1;
-  width:100%;
-  height:150%;
-  margin-left: -50%;
-  margin-top: -20%;
-  opacity: 0.2;
-}
-
 
 /* Large Screen - Contain content */
 @media screen and (min-width: 1600px) {
 
   #features{
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
 }
@@ -405,6 +399,10 @@ font-weight: 600;
 
   .titleImageContainer img {
     margin-bottom: 80px;
+  }
+
+  .carousel-title{
+    padding: 0 5% 5% 5%;
   }
 
 }
@@ -435,7 +433,7 @@ font-weight: 600;
   }
 
   #title{
-      background-size: 100%;
+    overflow-y: hidden;
   }
 
   .titleLogo{
@@ -461,12 +459,12 @@ font-weight: 600;
     text-align: center;
   }
 
-  .mainText h1{
-    font-size: 2.5rem;
+  .titleHighlight{
+    color: #13b79d;
   }
 
-  #title{
-    overflow-y: hidden;
+  .mainText h1{
+    font-size: 2.5rem;
   }
 
   /* Title Imgae becomes maintext background */
@@ -506,25 +504,13 @@ font-weight: 600;
     top: 80px;
   }
 
-  .featuresText1 h3{
-  padding-right: 0;
-  }
-
   .featuresContainer2{
     left:0;
     padding-left: 0;
   }
 
   .featuresText2{
-    top:50px;
-  }
-
-  #DashboardOverview{
-    height: 1300px;
-  }
-
-  .offerBackground img{
-    margin-top: -45%;
+    top:80px;
   }
 
 }
@@ -557,20 +543,20 @@ font-weight: 600;
     margin-right: 3%;
   }
 
+  #features h3{
+    font-size: 2.4rem;
+  }
+
   .featuresContainer1{
     left: 0;
     padding-left: 0;
     padding-right: 0;
-    margin-left: 0;
+    margin-left: 3%;
     margin-bottom: 30%;
   }
 
   .featuresText1 {
     width: auto;
-  }
-
-  .featuresText1 h3{
-    font-size: 2.4rem;
   }
 
   .featuresContainer2{
@@ -587,12 +573,8 @@ font-weight: 600;
     padding-left: 3%;
   }
 
-  .featuresText2 h3{
-    font-size: 2.4rem;
-  }
 
-
-  .slide-icon{
+  /* .slide-icon{
     top: 55%;
     width: 50px;
     height: 50px;
@@ -608,13 +590,13 @@ font-weight: 600;
 
   #next-icon{
     right: 25%;
-  }
+  } */
 
 }
 
 
 /* Feature 2 image (Right Side) becomes left aligned */
-@media (max-width:812px){
+@media screen and (max-width:812px){
 
   #banner button{
     left: 77%;
@@ -623,6 +605,16 @@ font-weight: 600;
   #features{
     margin-left: 0;
     margin-right: 0;
+    padding-right: 3%;
+  }
+
+  #features h3{
+    top: 40px;
+    font-size: 2.6rem;
+  }
+
+  #featres p{
+    padding-right: 0;
   }
 
   .featuresContainer1{
@@ -631,9 +623,9 @@ font-weight: 600;
 
   .featuresContainer1 img{
     float: none;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0;
     text-align: center;
   }
 
@@ -642,20 +634,12 @@ font-weight: 600;
     width:auto;
   }
 
-  .featuresText1 p{
-    padding-right: 0;
-  }
-
-  .featuresText1 h3{
-    top: 40px;
-    font-size: 2.6rem;
-  }
-
   .featuresContainer2{
     padding-left: 0;
   }
 
   .featuresContainer2 img{
+    display: block;
     float:none;
     margin-left: auto;
     margin-right: auto;
@@ -667,16 +651,8 @@ font-weight: 600;
     width: auto;
   }
 
-  .featuresText2 p{
-    padding-right: 0;
-  }
 
-  .featuresText2 h3{
-    top: 40px;
-    font-size: 2.6rem;
-  }
-
-  .slide-icon{
+  /* .slide-icon{
     top: 60%;
   }
 
@@ -686,13 +662,13 @@ font-weight: 600;
 
   #next-icon{
     right: 10%;
-  }
+  } */
 
 }
 
 
 /* Tablet view */
-@media (max-width:768px){
+@media screen and (max-width:768px){
 
   #banner img{
     top: 20px;
@@ -736,51 +712,51 @@ font-weight: 600;
     padding: 100px 5%;
   }
 
-  .featuresText1{
-    min-width: 300px;
-  }
-
-  .featuresText1 p{
-    padding-right: 0;
-  }
-
-  .featuresText1 h3{
+  #features h3{
     top: 5px;
     font-size: 2.4rem;
   }
 
+  #features p{
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .featuresText1{
+    left: 0;
+    min-width: 300px;
+    padding-left: 0;
+  }
+
+  .featuresContainer1 img{
+    float:none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
   .featuresContainer2 img{
-    float:left;
+    float:none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
   }
 
   .featuresText2{
     overflow:hidden;
-    padding-left: 3%;
     min-width: 500px;
-  }
-
-  .featuresText2 p{
-    padding-right: 0;
-    padding-left: 3%;
-  }
-
-  .featuresText2 h3{
-    top: 5px;
-    font-size: 2.4rem;
-    padding-left: 3%;
-  }
-
-  #DashboardOverview{
-    height: 1500px;
+    padding-left:0;
   }
 
   .slideText{
-    margin-top: 10%;
+    margin-top: 0;
   }
 
-  .slide-icon{
+  /* .slide-icon{
     top: 70%;
-  }
+  } */
 
   .carouselIndicators{
     top: 10px;
@@ -790,7 +766,7 @@ font-weight: 600;
 
 
 /* Tiny View*/
-@media (max-width:588px){
+@media screen and (max-width:588px){
 
   #banner button{
     left: 69%;
@@ -805,32 +781,24 @@ font-weight: 600;
     padding-right: 0;
   }
 
-  .featuresContainer1{
-    text-align: center;
+  #features h3{
+    margin-bottom: 0;
+    padding:0;
   }
 
-  .featuresContainer1 img{
-    float:none;
+  #features p{
+    margin-top: 5%;
+    padding: 0 5% 0 5%;
+    text-align: justify;
+  }
+
+  .featuresContainer1{
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
   }
 
   .featuresText1{
     left: 0;
     padding: 0;
-  }
-
-  .featuresText1 h3{
-    padding:0;
-    margin-bottom: 0;
-  }
-
-  .featuresText1 p{
-    padding: 0 5% 0 5%;
-    margin-top: 5%;
-    text-align: justify;
   }
 
   .featuresContainer2{
@@ -839,10 +807,10 @@ font-weight: 600;
 
   .featuresContainer2 img{
     float:none;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+    text-align: center;
   }
 
   .featuresText2{
@@ -850,39 +818,20 @@ font-weight: 600;
     padding: 0;
   }
 
-  .featuresText2 h3{
-    margin-bottom: 0;
-    padding:0;
-  }
+   .carousel-inner img{
+     width: 500px;
+   }
 
-  .featuresText2 p{
-    margin-top: 5%;
-    padding: 0 5% 0 5%;
-    text-align: justify;
-  }
-
-  #carouselImage1 img{
-    width: 500px;
-  }
-
-  #carouselImage2 img{
-    width: 500px;
-  }
-
-  #carouselImage3 img{
-    overflow-y: visible;
-    width: 500px;
-  }
-
-  .slide-icon{
+  /* .slide-icon{
     top: 74%;
-  }
+  } */
 
 }
 
 
 /* mobile */
-@media (max-width:512px){
+@media screen and (max-width:512px){
+
   #title{
     width:512px;
   }
@@ -897,9 +846,7 @@ font-weight: 600;
     width:512px;
     padding-left: 1%;
     padding-right: 1%;
+    height: 1500px;
   }
 
-  .offerBackground img{
-    margin-top: -75%;
-  }
 }
