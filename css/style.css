@@ -843,24 +843,32 @@ z-index: 1;
 @media screen and (max-width:512px){
 
   #title{
-    width:512px;
+    width:100%;
+    margin-right: 0;
+    margin-left:0;
   }
 
   #features{
-    width:512px;
+    width:100%;
     padding-left: 1%;
     padding-right: 1%;
+    margin-right: 0;
+    margin-left:0;
   }
 
   #DashboardOverview{
-    width:512px;
+    width:100%;
     padding-left: 1%;
     padding-right: 1%;
-    height: 1500px;
+    height: 1700px;
+    margin-right: 0;
+    margin-left:0;
   }
 
   #specialoffer{
-    width:512px;
+    width:100%;
+    margin-right: 0;
+    margin-left:0;
   }
 
 }
