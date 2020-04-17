@@ -841,6 +841,21 @@ z-index: 1;
 
 /* mobile */
 @media screen and (max-width:512px){
+  
+  #banner{
+  width: 100%;
+   margin-right: 0;
+    margin-left:0;
+    padding-right:1%;
+    padding-left:2%;
+  }
+  
+  #banner button{
+  position: absolute;
+  left:83%;
+  top:30px;
+
+  padding: 10px 25px;
 
   #title{
     width:100%;
@@ -882,7 +897,7 @@ z-index: 1;
   }
   
     #carouselImage1 img{
-    width: 80%;
+      width: 80%;
   }
 
   #carouselImage2 img{
