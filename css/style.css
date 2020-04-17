@@ -880,6 +880,18 @@ z-index: 1;
     margin-right: 0;
     margin-left:0;
   }
+  
+    #carouselImage1 img{
+    width: 80%;
+  }
+
+  #carouselImage2 img{
+    width: 80%;
+  }
+
+  #carouselImage3 img{
+    width: 80%;
+  }
 
   #specialoffer{
     width:100%;
