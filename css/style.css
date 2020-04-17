@@ -846,6 +846,8 @@ z-index: 1;
     width:100%;
     margin-right: 0;
     margin-left:0;
+    padding-right:0;
+    padding-left:0;
   }
 
   #features{
@@ -854,6 +856,20 @@ z-index: 1;
     padding-right: 1%;
     margin-right: 0;
     margin-left:0;
+  }
+  
+  .feature-container1{
+    margin-left:0;
+    margin-right:0;
+    padding-left:1%;
+    padding-right:1%;
+  }
+  
+  .feature-container2{
+    margin-left:0;
+    margin-right:0;
+    padding-left:1%;
+    padding-right:1%;
   }
 
   #DashboardOverview{
